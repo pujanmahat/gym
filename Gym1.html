@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+        /* background: url("images/img4.png"); */
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        background-color: #d2dae2;
+      }
+      .navbar {
+        /* display: flex; */
+        /* color: black; */
+        /* background-color: ##ffffff; */
+        /* padding: 4px; */
+        justify-content: space-between;
+        display: flex;
+        padding: 10px;
+        margin: 2px;
+      }
+      .navitems {
+        /* float: right; */
+        display: flex;
+        gap: 20px;
+        margin: 0px;
+        padding: 0px;
+      }
+      a {
+        text-decoration: none;
+        letter-spacing: 0.15rem;
+        color: black;
+        /* font-size: 18px; */
+      }
+      li {
+        list-style: none;
+        color: black;
+      }
+      .navbar a {
+        font-size: 25px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .information {
+        /* border: 3px solid black; */
+        padding: 50px;
+        margin: 50px auto;
+        border-radius: 50px;
+        width: 1000px;
+        /* position: center; */
+        background-color: #c7ecee;
+      }
+      .navbar a:hover {
+        color: white;
+        /* background-color: #dcdde1; */
+      }
+     .name{
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-style: normal;
+      margin-bottom: 30px;
+     }
+     .birthdate{
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     .gender{
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     .id{
+      
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     .file{
+
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     .hobbies{
+
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     .buttonsubmit{
+      font-size: 20px;
+      text-align: center;
+     }
+    .buttonsubmit:hover{
+      color: #3742fa;
+      /* background-color: black; */
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href=""
+        ><i><i class="fa-solid fa-dumbbell fa-2x"></i></i
+      ></a>
+
+      <ul class="navitems">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="gymimage">
+      <img src="images/img4.png" alt="" />
+    </div>
+    <video width="400" controls>
+      <source src="mov_bbb.mp4" type="video/mp4">
+      <source src="mov_bbb.ogg" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+    
+    <p>
+    Video courtesy of 
+    <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+    </p>
+    
+    <div class="information">
+      <form action="">
+        <p class="name">
+
+          Enter your name:
+          <input type="text" placeholder="Enter your name" class="name" />
+        </p>
+        <p class="birthdate">
+
+          Birthdate:<input type="date" placeholder="Enter your birthdate" class="birthdate"/>
+        </p>
+        <br />
+        <p class="gender">
+
+          Gender: male<input type="radio" name="Gender"  /> female<input
+          type="radio"
+          name="Gender"
+          />
+          other<input type="radio" name="Gender" />
+        </p>
+        <br />
+        <p class="id">
+
+          Enter your id:<input type="number" class="id"/>
+        </p>
+        <br />
+        <p class="file">
+
+          Upload file:<input type="file" class="file" />
+        </p>
+        <br />
+        <p class="hobbies">
+
+          Hobbies: Football<input type="radio" name="hobbies" /> Basketball<input
+          type="radio"
+          name="hobbies"
+          />
+          Swimming<input type="radio" name="hobbies" /> other<input
+          type="radio"
+          name="hobbies"
+          />
+        </p>
+        <br />
+        <p class="submit">
+
+          <input type="submit" class="buttonsubmit"/>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
